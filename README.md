@@ -135,26 +135,4 @@ docker compose down
 
 Supabase Storage necesita las tres variables `SUPABASE_*`; si se dejan vacías,
 la aplicación puede iniciar, pero las funciones que dependen de Storage no
-estarán configuradas. Mantener `.env` fuera del control de versiones y no
-compartir claves secretas.
-
-## Comandos útiles
-
-Ver el estado de los servicios:
-
-```powershell
-docker compose ps
-```
-
-Seguir los registros:
-
-```powershell
-docker compose logs -f web
-```
-
-Crear un usuario administrador:
-
-```powershell
-docker compose exec web python manage.py createsuperuser
-```
-
+estarán configuradas.
